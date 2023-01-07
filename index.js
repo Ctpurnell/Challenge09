@@ -60,7 +60,7 @@ const questions = [
   {
     type: "input",
     name: "why",
-    message: "Why did you create this project?",
+    message: "Why did you build this project?",
     validate: (whyInput) => {
       if (whyInput) {
         return true;
@@ -73,12 +73,12 @@ const questions = [
   {
     type: "input",
     name: "how",
-    message: "How will someone use this?",
+    message: "What problem will this solve?",
     validate: (howInput) => {
       if (howInput) {
         return true;
       } else {
-        console.log("Please enter what your project is.");
+        console.log("Please enter what this will solve.");
         return false;
       }
     },
@@ -87,12 +87,12 @@ const questions = [
     type: "input",
     name: "installation",
     message:
-      "Please provide step-by-step installation instructions for your project.",
+      "Please provide installation instructions.",
     validate: (installInput) => {
       if (installInput) {
         return true;
       } else {
-        console.log("Please enter your installation instructions.");
+        console.log("Please provide installation instructions.");
         return false;
       }
     },
